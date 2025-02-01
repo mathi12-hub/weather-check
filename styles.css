@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+  display: flex;
+  gap: 16px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px 20px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #ebfffc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  margin-top: 20px;
+  display: none;
+}
+
+.weather-icon {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.weather h1 {
+  font-size: 64px;
+}
+
+.weather h2 {
+  font-size: 32px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error {
+  display: none;
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 15px; /* Reduced padding for smaller devices */
+  }
+
+  .search input {
+    font-size: 14px; /* Smaller font for smaller screens */
+    height: 45px;
+  }
+
+  .search button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .weather-icon {
+    width: 100px; /* Smaller weather icon */
+  }
+
+  .weather h1 {
+    font-size: 36px; /* Further reduced for very small screens */
+  }
+
+  .weather h2 {
+    font-size: 24px;
+  }
+
+  .details {
+    gap: 15px; /* Less gap on very small screens */
+  }
+
+  .humidity,
+  .wind {
+    font-size: 18px; /* Adjusted further for readability */
+  }
+}
